@@ -1,0 +1,36 @@
+{
+  "name": "@2iq/ghaws",
+  "description": "Helpers to interact between GitHub Actions and AWS",
+  "version": "0.0.0",
+  "type": "module",
+  "bin": {
+    "ghaws": "bin/ghaws.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-iam": "3.34.0",
+    "@octokit/rest": "18.11.2",
+    "js-yaml": "4.1.0",
+    "tweetsodium": "0.0.5",
+    "yargs": "17.2.1"
+  },
+  "devDependencies": {
+    "xo": "0.44.0"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/*",
+    "bin/*"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2iq/ghaws.git"
+  },
+  "xo": {
+    "space": true
+  }
+}
